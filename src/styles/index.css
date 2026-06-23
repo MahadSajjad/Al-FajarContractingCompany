@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-steel-navy: #0e1c2b;
+    --color-blueprint-blue: #1e4e79;
+    --color-safety-orange: #ee6c12;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-white font-body text-slate-600 antialiased;
+    font-feature-settings: 'kern' 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold text-steel-navy;
+    text-wrap: balance;
+  }
+
+  /* Visible, brand-coloured keyboard focus on every interactive element. */
+  :where(a, button, input, textarea, select, [tabindex]):focus-visible {
+    @apply outline-none ring-2 ring-blueprint-blue ring-offset-2 ring-offset-white;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--color-safety-orange);
+    color: #fff;
+  }
+
+  img {
+    @apply max-w-full;
+  }
+}
+
+@layer components {
+  /* Spec-sheet eyebrow: tracked uppercase mono with a thin leading rule. */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 font-mono text-eyebrow font-medium uppercase tracking-eyebrow text-safety-orange;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply inline-block h-px w-8 bg-safety-orange;
+  }
+
+  /* Page content container. */
+  .container-page {
+    @apply mx-auto w-full max-w-container px-5 sm:px-8 lg:px-12;
+  }
+}
+
+/* Respect users who prefer reduced motion — disable all non-essential motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
