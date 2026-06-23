@@ -23,7 +23,10 @@ export default {
       backgroundImage: {
         // Subtle blueprint measured-grid device, used sparingly on dark sections.
         'blueprint-grid':
-          'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
+          'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
+        // Dark-line variant for light surfaces (placeholders, concrete bands).
+        'blueprint-grid-dark':
+          'linear-gradient(rgba(14,28,43,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(14,28,43,0.05) 1px, transparent 1px)',
       },
       backgroundSize: {
         grid: '48px 48px',
