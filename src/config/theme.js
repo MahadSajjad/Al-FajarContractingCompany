@@ -1,19 +1,4 @@
-/**
- * theme.js — SINGLE SOURCE OF TRUTH for all design tokens.
- *
- * Brand colors, fonts, spacing, radii and shadows are defined ONCE here and
- * consumed in two places so they never drift:
- *   1. tailwind.config.js  -> spreads `tailwindTheme` into theme.extend
- *   2. antd <ConfigProvider> -> consumes `antdTheme` (see AppProviders)
- *
- * Design thesis: "industrial precision" — concrete, steel, blueprint, safety
- * orange. Solid and engineered, not soft-startup gradients. Radii are slightly
- * squared (industrial), never pill-shaped.
- */
 
-/* ------------------------------------------------------------------ *
- * 1. Color tokens
- * ------------------------------------------------------------------ */
 export const colors = {
   // Primary dark — heroes, footer, dark sections.
   'steel-navy': {
@@ -68,8 +53,8 @@ export const colors = {
     300: '#dbe1e7',
     400: '#c5ced7',
   },
-  // Body text (matches Tailwind's slate-600; kept explicit for antd parity).
-  slate: '#475569',
+  // NOTE: body text uses Tailwind's built-in `slate` scale (slate-600 === #475569,
+  // the brief's slate token), so it is intentionally NOT overridden here.
 };
 
 /* ------------------------------------------------------------------ *

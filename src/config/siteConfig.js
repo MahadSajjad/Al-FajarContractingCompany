@@ -1,10 +1,3 @@
-/**
- * siteConfig.js — global company facts consumed across the site.
- * Edit company details HERE; nothing below is hardcoded in components.
- *
- * NOTE: canonical brand spelling is "Al Fajr" (not "Al Fajar").
- * Items marked CONFIRM require client sign-off before launch (see README §Open items).
- */
 export const siteConfig = {
   name: 'Al Fajr Contracting Company',
   legalName: 'Al Fajr Contracting Company',
