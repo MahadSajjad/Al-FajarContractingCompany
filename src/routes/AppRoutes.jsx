@@ -24,6 +24,9 @@ export const routes = [
       { path: 'sectors', lazy: lazyPage(() => import('../pages/Sectors')) },
       { path: 'clients', lazy: lazyPage(() => import('../pages/Clients')) },
       { path: 'contact', lazy: lazyPage(() => import('../pages/Contact')) },
+      // Concrete /404 is prerendered, then copied to dist/404.html (post-build)
+      // so static hosts serve a real branded 404. '*' covers client navigation.
+      { path: '404', lazy: lazyPage(() => import('../pages/NotFound')) },
       { path: '*', lazy: lazyPage(() => import('../pages/NotFound')) },
     ],
   },
