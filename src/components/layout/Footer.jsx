@@ -3,6 +3,7 @@ import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 import Logo from './Logo';
 import { mainNav } from '../../config/navigation';
+import { serviceCategories } from '../../data/services';
 import {
   siteConfig,
   primaryLocation,
@@ -63,12 +64,17 @@ export default function Footer() {
             <h2 className="font-mono text-xs uppercase tracking-eyebrow text-concrete-400">
               Capabilities
             </h2>
-            <ul className="mt-5 space-y-3 text-sm text-concrete-200">
-              <li>Civil &amp; Construction</li>
-              <li>MEP &amp; Specialized Systems</li>
-              <li>Earthworks &amp; Site Logistics</li>
-              <li>Equipment &amp; Fleet</li>
-              <li>Manpower &amp; Operations</li>
+            <ul className="mt-5 space-y-3 text-sm">
+              {serviceCategories.map((cat) => (
+                <li key={cat.slug}>
+                  <Link
+                    to={`/services#${cat.slug}`}
+                    className="text-concrete-200 transition-colors hover:text-safety-orange"
+                  >
+                    {cat.short}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
