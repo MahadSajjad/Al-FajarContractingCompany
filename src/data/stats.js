@@ -5,8 +5,8 @@
 // they do, mark each with a `// CONFIRM` comment (README §Open items #3).
 export const trustFacts = [
   {
-    value: '3 Cities',
-    label: 'Operating across Jeddah, Riyadh & Madinah',
+    value: 'All Cities',
+    label: 'Operating across Saudi Arabia',
   },
   {
     value: 'Licensed',

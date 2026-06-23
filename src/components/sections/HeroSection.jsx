@@ -28,7 +28,7 @@ export default function HeroSection() {
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-concrete-300">
             {siteConfig.name} delivers civil and industrial construction, MEP, manpower supply and
-            equipment services across Jeddah, Riyadh and Madinah — with a focus on safety, quality
+            equipment services across all over the Kingdom of Saudi Arabia — with a focus on safety, quality
             and on-time delivery.
           </p>
 
@@ -43,8 +43,6 @@ export default function HeroSection() {
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-eyebrow text-concrete-400">
             <span className="text-safety-orange">{siteConfig.tagline}</span>
-            <span aria-hidden="true" className="hidden h-1 w-1 rounded-full bg-white/30 sm:block" />
-            <span>{siteConfig.locations.map((l) => l.city).join(' · ')}</span>
           </div>
         </div>
 
