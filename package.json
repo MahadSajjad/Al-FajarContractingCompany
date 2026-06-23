@@ -9,6 +9,7 @@
     "generate:seo": "node scripts/generate-seo.mjs",
     "prebuild": "npm run generate:seo",
     "build": "vite-react-ssg build",
+    "postbuild": "node scripts/post-build.mjs",
     "prebuild:csr": "npm run generate:seo",
     "build:csr": "vite build",
     "preview": "vite preview",
