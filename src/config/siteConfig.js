@@ -30,7 +30,7 @@ export const siteConfig = {
     {
       city: 'Riyadh',
       label: 'Office',
-      address: 'Al Sulay District, Riyadh, Saudi Arabia',
+      address: 'An nasr street, Riyadh, Saudi Arabia',
       mapQuery: 'Al Sulay District, Riyadh, Saudi Arabia',
     },
   ],

@@ -7,4 +7,11 @@ export const mainNav = [
   { label: 'Contact', to: '/contact' },
 ];
 
+// Active-route test shared by Navbar + MobileMenu. Used only client-side
+// (gated by useHydrated) so SSR markup stays deterministic.
+export function isNavActive(pathname, to) {
+  if (to === '/') return pathname === '/';
+  return pathname === to || pathname.startsWith(`${to}/`);
+}
+
 export default mainNav;

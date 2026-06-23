@@ -1,36 +1,30 @@
 import Layout from '../components/layout/Layout';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Services from '../pages/Services';
-import ServiceDetail from '../pages/ServiceDetail';
-import Sectors from '../pages/Sectors';
-import Clients from '../pages/Clients';
-import Contact from '../pages/Contact';
-import NotFound from '../pages/NotFound';
 import { allServiceSlugs } from '../data/services';
 
-// Route tree consumed by vite-react-ssg (createBrowserRouter under the hood).
-// The root route renders <Layout/> (providers + chrome) with child pages in its
-// <Outlet/>. The dynamic /services/:slug route gets a getStaticPaths() in Phase 4
-// so every service is prerendered to static HTML.
+// Route-level code splitting: each page is a lazy chunk so page-specific code
+// (e.g. the antd-backed contact form) loads only when its route is visited.
+// The Layout shell stays in the main chunk. vite-react-ssg resolves `lazy`
+// during prerender and on the client before mount.
+const lazyPage = (loader) => () => loader().then((m) => ({ Component: m.default }));
+
 export const routes = [
   {
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, Component: Home },
-      { path: 'about', Component: About },
-      { path: 'services', Component: Services },
+      { index: true, lazy: lazyPage(() => import('../pages/Home')) },
+      { path: 'about', lazy: lazyPage(() => import('../pages/About')) },
+      { path: 'services', lazy: lazyPage(() => import('../pages/Services')) },
       {
         path: 'services/:slug',
-        Component: ServiceDetail,
+        lazy: lazyPage(() => import('../pages/ServiceDetail')),
         // Pre-render a static HTML page for every service.
         getStaticPaths: () => allServiceSlugs.map((slug) => `/services/${slug}`),
       },
-      { path: 'sectors', Component: Sectors },
-      { path: 'clients', Component: Clients },
-      { path: 'contact', Component: Contact },
-      { path: '*', Component: NotFound },
+      { path: 'sectors', lazy: lazyPage(() => import('../pages/Sectors')) },
+      { path: 'clients', lazy: lazyPage(() => import('../pages/Clients')) },
+      { path: 'contact', lazy: lazyPage(() => import('../pages/Contact')) },
+      { path: '*', lazy: lazyPage(() => import('../pages/NotFound')) },
     ],
   },
 ];

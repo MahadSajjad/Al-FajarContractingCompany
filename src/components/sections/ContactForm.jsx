@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
-import { Form, Input, Select, App } from 'antd';
+import { Form, Input, Select, App, ConfigProvider } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 import Button from '../ui/Button';
+import { antdTheme } from '../../config/theme';
 import { contactSchema, serviceInterestOptions, createContactSubmissionApi } from '../../services/contactApi';
 
 // Required-field label with an orange asterisk (zod owns the actual validation,
@@ -12,7 +13,9 @@ const req = (text) => (
   </>
 );
 
-export default function ContactForm() {
+// Inner form — relies on antd App context (for themed `message`) supplied by the
+// wrapper below. antd lives only on this route, so it stays off every other page.
+function ContactFormInner() {
   const [form] = Form.useForm();
   const { message } = App.useApp();
   const [loading, setLoading] = useState(false);
@@ -139,5 +142,17 @@ export default function ContactForm() {
         </p>
       </div>
     </Form>
+  );
+}
+
+// Public component: provides the antd theme + App context locally so antd is
+// only bundled/loaded on the contact route.
+export default function ContactForm() {
+  return (
+    <ConfigProvider theme={antdTheme}>
+      <App component={false}>
+        <ContactFormInner />
+      </App>
+    </ConfigProvider>
   );
 }
