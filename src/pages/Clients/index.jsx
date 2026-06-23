@@ -1,14 +1,30 @@
 import SEO from '../../components/seo/SEO';
+import PageHeader from '../../components/sections/PageHeader';
+import ClientsSection from '../../components/sections/ClientsSection';
+import CredentialStrip from '../../components/sections/CredentialStrip';
+import CTASection from '../../components/sections/CTASection';
 
 export default function Clients() {
   return (
-    <section className="container-page py-28 lg:py-36">
-      <SEO title="Clients & Partners" path="/clients" />
-      <p className="eyebrow">Trusted By</p>
-      <h1 className="mt-5 font-display text-display-xl text-steel-navy">Clients &amp; Partners</h1>
-      <p className="mt-4 max-w-xl text-lg text-slate-600">
-        Scaffold placeholder — built in Phase 5.
-      </p>
-    </section>
+    <>
+      <SEO
+        title="Clients & Partners"
+        description="Al Fajr Contracting partners with clients across the public sector, energy, industrial and real-estate markets in Saudi Arabia."
+        path="/clients"
+      />
+
+      <PageHeader
+        eyebrow="Trusted By"
+        title="Clients & Partners"
+        description="We work as a contractor and manpower partner to organisations across Saudi Arabia's key sectors."
+        breadcrumbs={[{ label: 'Home', to: '/' }, { label: 'Clients' }]}
+      />
+
+      <ClientsSection tone="white" />
+
+      <CredentialStrip tone="concrete" />
+
+      <CTASection />
+    </>
   );
 }

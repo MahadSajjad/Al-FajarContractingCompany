@@ -40,6 +40,10 @@ import {
   TbLicense,
   TbMapPin,
   TbFlame,
+  TbTargetArrow,
+  TbRocket,
+  TbEye,
+  TbUserCircle,
 } from 'react-icons/tb';
 import { GiConcreteBag, GiBrickWall, GiPipes, GiPaintRoller, GiCrane } from 'react-icons/gi';
 import { FaFaucetDrip, FaPersonDigging, FaTruckMoving, FaFireExtinguisher, FaHelmetSafety } from 'react-icons/fa6';
@@ -121,6 +125,12 @@ export const iconMap = {
   vat: TbReportMoney,
   'transport-license': TbLicense,
   'national-address': TbMapPin,
+
+  // about / narrative
+  objective: TbTargetArrow,
+  mission: TbRocket,
+  vision: TbEye,
+  leadership: TbUserCircle,
 
   // generic / structural
   wall: TbWall,
