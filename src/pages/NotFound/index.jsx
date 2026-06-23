@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import SEO from '../../components/seo/SEO';
 
 export default function NotFound() {
   return (
     <section className="relative overflow-hidden bg-steel-navy text-white">
+      <SEO title="Page not found" noindex />
       <div className="absolute inset-0 bg-blueprint-grid bg-grid opacity-60" aria-hidden="true" />
       <div className="container-page relative flex min-h-[70vh] flex-col items-center justify-center py-24 text-center">
         <p className="font-mono text-sm uppercase tracking-eyebrow text-safety-orange">

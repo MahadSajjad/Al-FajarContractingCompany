@@ -7,6 +7,7 @@ import Sectors from '../pages/Sectors';
 import Clients from '../pages/Clients';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import { allServiceSlugs } from '../data/services';
 
 // Route tree consumed by vite-react-ssg (createBrowserRouter under the hood).
 // The root route renders <Layout/> (providers + chrome) with child pages in its
@@ -20,7 +21,12 @@ export const routes = [
       { index: true, Component: Home },
       { path: 'about', Component: About },
       { path: 'services', Component: Services },
-      { path: 'services/:slug', Component: ServiceDetail },
+      {
+        path: 'services/:slug',
+        Component: ServiceDetail,
+        // Pre-render a static HTML page for every service.
+        getStaticPaths: () => allServiceSlugs.map((slug) => `/services/${slug}`),
+      },
       { path: 'sectors', Component: Sectors },
       { path: 'clients', Component: Clients },
       { path: 'contact', Component: Contact },
