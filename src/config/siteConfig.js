@@ -28,24 +28,10 @@ export const siteConfig = {
   // CONFIRM canonical published office(s) — sources disagree (README §Open items #2).
   locations: [
     {
-      city: 'Jeddah',
-      label: 'Head Office',
-      address: 'Basma Tower, Al-Aziziya, Jeddah, Saudi Arabia',
-      primary: true,
-      // CONFIRM exact coordinates for the map embed.
-      mapQuery: 'Basma Tower, Al-Aziziya, Jeddah, Saudi Arabia',
-    },
-    {
       city: 'Riyadh',
       label: 'Office',
       address: 'Al Sulay District, Riyadh, Saudi Arabia',
       mapQuery: 'Al Sulay District, Riyadh, Saudi Arabia',
-    },
-    {
-      city: 'Madinah',
-      label: 'Office',
-      address: 'Al Madinah, Saudi Arabia',
-      mapQuery: 'Al Madinah, Saudi Arabia',
     },
   ],
 

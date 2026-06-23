@@ -2,6 +2,8 @@ import { useParams, Link } from 'react-router-dom';
 import { FiCheck, FiPhone, FiArrowLeft } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import SEO from '../../components/seo/SEO';
+import StructuredData from '../../components/seo/StructuredData';
+import { getServiceSchema } from '../../config/structuredData';
 import PageHeader from '../../components/sections/PageHeader';
 import Section from '../../components/ui/Section';
 import Button from '../../components/ui/Button';
@@ -57,6 +59,7 @@ export default function ServiceDetail() {
         type="article"
         image={service.image}
       />
+      <StructuredData data={getServiceSchema(service)} />
 
       <PageHeader
         eyebrow={category?.name}

@@ -1,0 +1,13 @@
+# robots.txt — Al Fajr Contracting Company
+User-agent: *
+Allow: /
+
+# AI answer engines
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://alfajrcontractingco.com/sitemap.xml
