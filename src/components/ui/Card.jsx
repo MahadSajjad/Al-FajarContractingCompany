@@ -24,20 +24,20 @@ export default function Card({
 
   if (to) {
     return (
-      <Link to={to} className={classes} {...props}>
+      <Link to={to} data-reveal="" className={classes} {...props}>
         {children}
       </Link>
     );
   }
   if (href) {
     return (
-      <a href={href} className={classes} {...props}>
+      <a href={href} data-reveal="" className={classes} {...props}>
         {children}
       </a>
     );
   }
   return (
-    <div className={classes} {...props}>
+    <div data-reveal="" className={classes} {...props}>
       {children}
     </div>
   );

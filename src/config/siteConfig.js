@@ -25,18 +25,18 @@ export const siteConfig = {
 
   emails: ['malik.hayat@alfajrcontractingco.com', 'zain.khan@alfajrcontractingco.com'],
 
-  // CONFIRM canonical published office(s) — sources disagree (README §Open items #2).
   locations: [
     {
       city: 'Riyadh',
-      label: 'Office',
-      address: 'An nasr street, Riyadh, Saudi Arabia',
-      mapQuery: 'Al Sulay District, Riyadh, Saudi Arabia',
+      label: 'Head Office',
+      address: 'HPHR+CW9, An Nasr Rd, Industrial District, Riyadh 14714, Saudi Arabia',
+      primary: true,
+      mapQuery: 'HPHR+CW9 An Nasr Rd, Industrial District, Riyadh 14714, Saudi Arabia',
     },
   ],
 
   // Areas actively served (used for SEO areaServed + copy).
-  areasServed: ['Jeddah', 'Riyadh', 'Madinah', 'Saudi Arabia'],
+  areasServed: ['Riyadh', 'Saudi Arabia'],
 
   // Social profiles — placeholders; fill if/when client provides URLs.
   social: {

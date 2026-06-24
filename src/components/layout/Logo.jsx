@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { siteConfig } from '../../config/siteConfig';
 
 function LogoMark({ size = 40 }) {
@@ -40,9 +39,10 @@ export default function Logo({ variant = 'dark', withLink = true, className = ''
 
   if (!withLink) return inner;
 
+  // Full page reload to the homepage (a true "reload" button), per request.
   return (
-    <Link to="/" aria-label={`${siteConfig.name} — home`} className="inline-flex">
+    <a href="/" aria-label={`${siteConfig.name} — reload home`} className="inline-flex">
       {inner}
-    </Link>
+    </a>
   );
 }

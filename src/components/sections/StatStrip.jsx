@@ -7,7 +7,10 @@ import { trustFacts } from '../../data/stats';
 export default function StatStrip() {
   return (
     <Section tone="white" spacing="sm">
-      <div className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-concrete-300 bg-concrete-300 lg:grid-cols-4">
+      <div
+        data-reveal=""
+        className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-concrete-300 bg-concrete-300 lg:grid-cols-4"
+      >
         {trustFacts.map((fact) => (
           <div key={fact.label} className="bg-white p-6 lg:p-7">
             <Stat value={fact.value} label={fact.label} />

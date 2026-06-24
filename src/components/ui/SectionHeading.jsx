@@ -20,7 +20,7 @@ export default function SectionHeading({
     size === 'xl' ? 'text-display-xl' : size === 'md' ? 'text-display-md' : 'text-display-lg';
 
   return (
-    <div className={cn('flex max-w-3xl flex-col', alignCls, className)}>
+    <div data-reveal="" className={cn('flex max-w-3xl flex-col', alignCls, className)}>
       {eyebrow && (
         <Eyebrow tone={onDark ? 'light' : 'accent'} className="mb-4">
           {eyebrow}

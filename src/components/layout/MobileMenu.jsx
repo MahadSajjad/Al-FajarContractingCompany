@@ -29,7 +29,9 @@ export default function MobileMenu({ open, onClose }) {
 
   return (
     <div
-      className={`fixed inset-0 z-[60] lg:hidden ${open ? '' : 'pointer-events-none'}`}
+      className={`fixed inset-0 z-[60] overflow-hidden lg:hidden ${
+        open ? '' : 'pointer-events-none'
+      }`}
       aria-hidden={!open}
     >
       {/* Backdrop */}

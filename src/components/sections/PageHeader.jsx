@@ -32,6 +32,7 @@ export default function PageHeader({ eyebrow, title, description, breadcrumbs, a
           </Eyebrow>
         )}
         <h1
+          data-reveal=""
           className={`mt-4 font-display text-display-xl font-bold text-white ${
             centered ? 'mx-auto max-w-3xl' : 'max-w-4xl'
           }`}
@@ -40,6 +41,8 @@ export default function PageHeader({ eyebrow, title, description, breadcrumbs, a
         </h1>
         {description && (
           <p
+            data-reveal=""
+            style={{ '--reveal-delay': '90ms' }}
             className={`mt-5 text-lg leading-relaxed text-concrete-300 ${
               centered ? 'mx-auto max-w-2xl' : 'max-w-2xl'
             }`}

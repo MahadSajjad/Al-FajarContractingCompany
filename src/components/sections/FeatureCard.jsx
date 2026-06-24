@@ -7,6 +7,8 @@ export default function FeatureCard({ feature, index, surface = 'light' }) {
   const dark = surface === 'dark';
   return (
     <div
+      data-reveal=""
+      style={index != null ? { '--reveal-delay': `${(index % 3) * 70}ms` } : undefined}
       className={cn(
         'relative h-full rounded-lg border p-6 lg:p-7',
         dark ? 'border-white/10 bg-white/[0.03]' : 'border-concrete-300 bg-white shadow-card',

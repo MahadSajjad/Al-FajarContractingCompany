@@ -21,18 +21,29 @@ export default function HeroSection() {
         <div className="lg:col-span-7">
           <Eyebrow tone="light">General Contracting · Industrial Services</Eyebrow>
 
-          <h1 className="mt-6 font-display text-display-2xl font-extrabold leading-[1.02] text-white">
+          <h1
+            data-reveal=""
+            className="mt-6 font-display text-display-2xl font-extrabold leading-[1.02] text-white"
+          >
             Building, powering and maintaining{' '}
             <span className="text-safety-orange">Saudi Arabia.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-concrete-300">
+          <p
+            data-reveal=""
+            style={{ '--reveal-delay': '90ms' }}
+            className="mt-6 max-w-xl text-lg leading-relaxed text-concrete-300"
+          >
             {siteConfig.name} delivers civil and industrial construction, MEP, manpower supply and
             equipment services across all over the Kingdom of Saudi Arabia — with a focus on safety, quality
             and on-time delivery.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div
+            data-reveal=""
+            style={{ '--reveal-delay': '180ms' }}
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
+          >
             <Button to="/contact" variant="primary" size="lg">
               Request a Quote
             </Button>
@@ -48,7 +59,11 @@ export default function HeroSection() {
 
         {/* Right — engineered "spec sheet" capability card (no stock photo needed) */}
         <div className="lg:col-span-5">
-          <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 shadow-card-hover backdrop-blur-sm sm:p-7">
+          <div
+            data-reveal=""
+            style={{ '--reveal-delay': '140ms' }}
+            className="rounded-xl border border-white/10 bg-white/[0.04] p-6 shadow-card-hover backdrop-blur-sm sm:p-7"
+          >
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
               <span className="font-mono text-xs uppercase tracking-eyebrow text-concrete-300">
                 Scope of Work

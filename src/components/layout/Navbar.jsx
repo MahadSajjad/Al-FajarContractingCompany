@@ -19,6 +19,7 @@ export default function Navbar() {
   const { pathname } = useLocation();
 
   return (
+    <>
     <header
       className={[
         'sticky top-0 z-50 w-full bg-white/95 backdrop-blur transition-shadow duration-300',
@@ -75,9 +76,11 @@ export default function Navbar() {
           <FiMenu className="h-6 w-6" aria-hidden="true" />
         </button>
       </nav>
-
-      {/* Mobile menu (custom, no antd) */}
-      <MobileMenu open={open} onClose={() => setOpen(false)} />
     </header>
+
+    {/* Mobile menu lives OUTSIDE <header>: the header's backdrop-filter creates a
+        containing block that would otherwise trap the menu's fixed positioning. */}
+    <MobileMenu open={open} onClose={() => setOpen(false)} />
+  </>
   );
 }
