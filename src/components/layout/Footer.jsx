@@ -4,19 +4,9 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/
 import Logo from './Logo';
 import { mainNav } from '../../config/navigation';
 import { serviceCategories } from '../../data/services';
-import {
-  siteConfig,
-  primaryLocation,
-  telLink,
-  mailtoLink,
-} from '../../config/siteConfig';
+import { siteConfig, primaryLocation, telLink, mailtoLink, } from '../../config/siteConfig';
 
-const socialIcons = {
-  facebook: FaFacebookF,
-  instagram: FaInstagram,
-  linkedin: FaLinkedinIn,
-  x: FaXTwitter,
-};
+const socialIcons = { facebook: FaFacebookF, instagram: FaInstagram, linkedin: FaLinkedinIn, x: FaXTwitter };
 
 export default function Footer() {
   const year = new Date().getFullYear();

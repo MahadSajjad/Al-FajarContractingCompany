@@ -1,14 +1,3 @@
-// services.js — full service taxonomy. This is the SINGLE source for the
-// /services overview and every /services/:slug detail page.
-//
-// IMAGE SLOTS: each service has `image: null` until real photography is ready.
-// To add a photo, drop an optimised file at public/images/services/<slug>.jpg
-// (~1600x1000, WebP/JPG) and set `image: '/images/services/<slug>.jpg'`.
-// Components render a branded placeholder while `image` is null — no 404s.
-//
-// COPY RULE: descriptions are honest and capability-based. No invented client
-// names, project counts, years, or guarantees (see README §Open items).
-
 export const serviceCategories = [
   {
     slug: 'civil-construction',
@@ -75,7 +64,7 @@ export const services = [
     title: 'Civil Work',
     category: 'civil-construction',
     icon: 'civil-work',
-    image: null,
+    image: '/images/services/civil-work.jpg',
     excerpt:
       'Engineers, supervisors and a skilled workforce executing every phase to high safety and quality standards.',
     description:
@@ -95,7 +84,7 @@ export const services = [
     title: 'Concrete & Plaster Work',
     category: 'civil-construction',
     icon: 'concrete-plaster',
-    image: null,
+    image: '/images/services/concrete-plaster-work.jpg',
     excerpt: 'Durable concrete and clean plaster finishes built to engineering specification.',
     description:
       'From structural pours to smooth plaster finishes, we deliver concrete works that meet the required strength and tolerances. Mixes, placement and curing are controlled on site, and plastering is finished cleanly to provide a sound base for paint and final treatments.',
@@ -114,7 +103,7 @@ export const services = [
     title: 'Block Work',
     category: 'civil-construction',
     icon: 'block-work',
-    image: null,
+    image: '/images/services/block-work.jpg',
     excerpt: 'Accurate blockwork for partitions, boundary walls and load-bearing elements.',
     description:
       'We build internal and external blockwork to line, level and plumb — partitions, infill walls and boundary walls. Correct bonding, reinforcement and mortar quality give walls that are straight, stable and ready for plaster or cladding.',
@@ -133,7 +122,7 @@ export const services = [
     title: 'Renovations & Extensions',
     category: 'civil-construction',
     icon: 'renovations',
-    image: null,
+    image: '/images/services/renovations-extensions.jpg',
     excerpt: 'Upgrades, refurbishments and extensions that add space and value with minimal disruption.',
     description:
       'We renovate and extend existing residential, commercial and industrial spaces — reconfiguring layouts, upgrading finishes and adding new built area. Work is planned around your operations to keep disruption to a minimum while improving function, safety and value.',
@@ -152,7 +141,7 @@ export const services = [
     title: 'Architectural & Structural Work',
     category: 'civil-construction',
     icon: 'architectural',
-    image: null,
+    image: '/images/services/architectural-structural-work.jpg',
     excerpt: 'Architectural detailing and structural elements executed to drawing and specification.',
     description:
       'We translate architectural and structural drawings into built form — delivering the structural elements and the architectural detailing that define a finished space. Close coordination between trades keeps geometry, tolerances and finishes aligned with the design intent.',
@@ -173,7 +162,7 @@ export const services = [
     title: 'Mechanical Services',
     category: 'mep',
     icon: 'mechanical',
-    image: null,
+    image: '/images/services/mechanical-services.jpg',
     excerpt: 'Full mechanical scope for industrial, commercial and infrastructure projects.',
     description:
       'Our mechanical teams install and integrate the systems that keep facilities running — HVAC, mechanical piping and plant equipment. We work from design through installation, testing and commissioning, coordinating tightly with electrical and civil scopes.',
@@ -192,7 +181,7 @@ export const services = [
     title: 'Electrical Solutions',
     category: 'mep',
     icon: 'electrical',
-    image: null,
+    image: '/images/services/electrical-solutions.jpg',
     excerpt: 'Certified electricians delivering residential, commercial and industrial solutions.',
     description:
       'We deliver electrical installations from power distribution and containment to lighting, small power and final connections. Work is carried out by qualified electricians to recognised standards, with testing before handover for safe, reliable operation.',
@@ -211,7 +200,7 @@ export const services = [
     title: 'Plumbing Work',
     category: 'mep',
     icon: 'plumbing',
-    image: null,
+    image: '/images/services/plumbing-work.jpg',
     excerpt: 'Water supply, drainage and sanitary installations that are clean, tested and leak-free.',
     description:
       'We install and connect water supply, drainage and sanitary systems for new builds and refurbishments. Pipework is routed neatly, pressure-tested and commissioned so systems perform reliably and meet hygiene and code requirements.',
@@ -230,7 +219,7 @@ export const services = [
     title: 'Pipe Line Work',
     category: 'mep',
     icon: 'pipeline',
-    image: null,
+    image: '/images/services/pipe-line-work.jpg',
     excerpt: 'Pipeline fabrication and installation for process, utility and infrastructure systems.',
     description:
       'We fabricate and install pipelines for utility and process applications — handling routing, jointing, supports and testing. Our teams work to the required pressure and material standards so lines are safe, durable and ready for service.',
@@ -249,7 +238,7 @@ export const services = [
     title: 'Ducting',
     category: 'mep',
     icon: 'ducting',
-    image: null,
+    image: '/images/services/ducting.jpg',
     excerpt: 'HVAC ductwork fabricated and installed for efficient, balanced air distribution.',
     description:
       'We supply and install HVAC ductwork — fabrication, routing, insulation and connection to plant and terminals. Properly sealed and supported ducting delivers balanced airflow and efficient performance across the facility.',
@@ -268,7 +257,7 @@ export const services = [
     title: 'Cable Tray',
     category: 'mep',
     icon: 'cable-tray',
-    image: null,
+    image: '/images/services/cable-tray.jpg',
     excerpt: 'Cable containment and tray systems that keep electrical infrastructure safe and organised.',
     description:
       'We install cable tray and containment systems that route and protect electrical and data cabling. Correctly sized, supported and bonded trays make installations safe, maintainable and ready for future expansion.',
@@ -289,7 +278,7 @@ export const services = [
     title: 'Fire Fighting System',
     category: 'specialized-systems',
     icon: 'firefighting',
-    image: null,
+    image: '/images/services/fire-fighting-system.jpg',
     excerpt: 'Reliable systems protecting lives, property and operations.',
     description:
       'We install fire-fighting and protection systems — pipework, pumps, sprinklers and connections to detection and alarm. Systems are installed and tested to perform when it matters, helping safeguard people, assets and continuity of operations.',
@@ -308,7 +297,7 @@ export const services = [
     title: 'Security & Smart System',
     category: 'specialized-systems',
     icon: 'security',
-    image: null,
+    image: '/images/services/security-smart-system.jpg',
     excerpt: 'Security and smart automation protecting people and assets while improving efficiency.',
     description:
       'We install security and smart-building systems — CCTV, access control and automation — that protect people and assets and make facilities easier to run. Systems are configured, tested and handed over ready for monitoring and day-to-day use.',
@@ -327,7 +316,7 @@ export const services = [
     title: 'Industrial Refrigeration',
     category: 'specialized-systems',
     icon: 'refrigeration',
-    image: null,
+    image: '/images/services/industrial-refrigeration.jpg',
     excerpt: 'Engineered refrigeration for demanding operations across the Kingdom.',
     description:
       'We install and support industrial refrigeration for facilities that depend on controlled temperatures. From plant and pipework to controls, our teams deliver systems built for reliability in demanding, continuous-duty environments.',
@@ -346,7 +335,7 @@ export const services = [
     title: 'Power Solutions',
     category: 'specialized-systems',
     icon: 'power',
-    image: null,
+    image: '/images/services/power-solutions.jpg',
     excerpt: 'Power systems for modern industry, commercial facilities and critical infrastructure.',
     description:
       'We deliver power solutions that keep operations running — distribution, backup and supporting infrastructure sized to the facility. Installations are tested and commissioned for safe, dependable performance where uptime matters.',
@@ -367,7 +356,7 @@ export const services = [
     title: 'Excavation & Demolition',
     category: 'earthworks-site-logistics',
     icon: 'excavation',
-    image: null,
+    image: '/images/services/excavation-demolition.jpg',
     excerpt: 'Experienced teams and specialised equipment delivering on time and on budget.',
     description:
       'We carry out excavation and controlled demolition with the right plant and experienced operators. Earth is cut to line and level and structures are taken down safely, with material handled and cleared so the next stage can begin without delay.',
@@ -386,7 +375,7 @@ export const services = [
     title: 'Grading & Backfilling',
     category: 'earthworks-site-logistics',
     icon: 'grading',
-    image: null,
+    image: '/images/services/grading-backfilling.jpg',
     excerpt: 'Quality materials and proven compaction methods meeting engineering specifications.',
     description:
       'We grade and backfill to design levels using suitable materials and proven compaction methods. The result is a stable, well-prepared platform that meets engineering specifications and supports the works that follow.',
@@ -405,7 +394,7 @@ export const services = [
     title: 'Leveling & Compaction',
     category: 'earthworks-site-logistics',
     icon: 'leveling',
-    image: null,
+    image: '/images/services/leveling-compaction.jpg',
     excerpt: 'Site preparation through final surface finishing on a solid, well-compacted base.',
     description:
       'We level and compact ground to provide a solid base for construction and surfacing. Controlled compaction in layers achieves the required density, reducing settlement risk and giving a dependable foundation for the works above.',
@@ -424,7 +413,7 @@ export const services = [
     title: 'Material & Asphalt Supply',
     category: 'earthworks-site-logistics',
     icon: 'asphalt',
-    image: null,
+    image: '/images/services/material-asphalt-supply.jpg',
     excerpt: 'Reliable, timely supply for infrastructure, roadwork and building projects.',
     description:
       'We supply construction materials and asphalt to keep infrastructure, roadwork and building projects moving. Dependable scheduling and delivery help avoid downtime and keep programmes on track.',
@@ -443,7 +432,7 @@ export const services = [
     title: 'Loading & Transportation',
     category: 'earthworks-site-logistics',
     icon: 'loading',
-    image: null,
+    image: '/images/services/loading-transportation.jpg',
     excerpt: 'Efficient, safe and cost-effective loading and transport tailored to the project.',
     description:
       'We handle loading and transportation of materials and equipment with a fleet and crews suited to the task. Routes and scheduling are planned for efficiency and safety, keeping site logistics smooth and costs under control.',
@@ -462,7 +451,7 @@ export const services = [
     title: 'Waste Removal',
     category: 'earthworks-site-logistics',
     icon: 'waste',
-    image: null,
+    image: '/images/services/waste-removal.jpg',
     excerpt: 'Fast, safe and environmentally responsible removal for construction and industrial sites.',
     description:
       'We clear construction, demolition and industrial waste quickly and responsibly. Keeping sites clean improves safety and productivity, and material is handled and disposed of with care for the environment.',
@@ -481,7 +470,7 @@ export const services = [
     title: 'Site Preparation & Earthworks',
     category: 'earthworks-site-logistics',
     icon: 'site-prep',
-    image: null,
+    image: '/images/services/site-preparation-earthworks.jpg',
     excerpt: 'Getting sites ready — clearing, earthworks and groundworks done right from the start.',
     description:
       'We prepare sites end to end — clearing, earthmoving and groundworks that set a project up for success. Getting the ground right at the start protects the programme and the quality of everything built afterwards.',
@@ -502,7 +491,7 @@ export const services = [
     title: 'Gypsum Board',
     category: 'finishing-works',
     icon: 'gypsum',
-    image: null,
+    image: '/images/services/gypsum-board.jpg',
     excerpt: 'Partitions and ceilings in gypsum board for clean lines and fast, tidy installation.',
     description:
       'We install gypsum board partitions and ceilings that deliver clean lines and a smooth base for decoration. Framing, boarding and jointing are finished neatly, with options for acoustic and moisture-resistant board where needed.',
@@ -521,7 +510,7 @@ export const services = [
     title: 'Painting Work',
     category: 'finishing-works',
     icon: 'painting',
-    image: null,
+    image: '/images/services/painting-work.jpg',
     excerpt: 'Interior and exterior painting with proper preparation for a durable, even finish.',
     description:
       'We prepare surfaces and apply interior and exterior paint systems for a clean, even, lasting finish. Correct preparation and the right coatings protect surfaces and lift the overall quality of the space.',
@@ -540,7 +529,7 @@ export const services = [
     title: 'Marble & Tiles Work',
     category: 'finishing-works',
     icon: 'marble',
-    image: null,
+    image: '/images/services/marble-tiles-work.jpg',
     excerpt: 'Precise marble and tiling for floors and walls with crisp lines and level surfaces.',
     description:
       'We lay marble and tiles for floors and walls with attention to setting out, level and joint lines. Careful preparation and finishing produce hard-wearing surfaces that look right and last.',
@@ -559,7 +548,7 @@ export const services = [
     title: 'Hand Railing',
     category: 'finishing-works',
     icon: 'railing',
-    image: null,
+    image: '/images/services/hand-railing.jpg',
     excerpt: 'Handrails and balustrades fabricated and fixed for safety and a clean finish.',
     description:
       'We fabricate and install handrails and balustrades for stairs, walkways and edges. Securely fixed and neatly finished, they meet safety requirements while complementing the surrounding finishes.',
@@ -580,7 +569,7 @@ export const services = [
     title: 'Rental Equipment',
     category: 'equipment-fleet',
     icon: 'rental-equipment',
-    image: null,
+    image: '/images/services/rental-equipment.jpg',
     excerpt: 'A broad range of well-maintained equipment to complete projects safely and on budget.',
     description:
       'We provide well-maintained construction equipment for hire to support projects of any size. Reliable plant and timely availability help you keep work moving safely and within budget — with or without operators, on short-term or longer contract hire terms as required.',
@@ -599,7 +588,7 @@ export const services = [
     title: 'Dump Truck Rental',
     category: 'equipment-fleet',
     icon: 'dump-truck',
-    image: null,
+    image: '/images/services/dump-truck-rental.jpg',
     excerpt: 'Dump trucks for earthmoving and haulage, available with experienced operators.',
     description:
       'We hire out dump trucks for earthmoving, material haulage and site transport logistics. Maintained vehicles and experienced operators keep material flowing efficiently across the project.',
@@ -618,7 +607,7 @@ export const services = [
     title: 'Diesel Supply Truck',
     category: 'equipment-fleet',
     icon: 'diesel-truck',
-    image: null,
+    image: '/images/services/diesel-supply-truck.jpg',
     excerpt: 'On-site diesel delivery that keeps plant and generators fuelled and productive.',
     description:
       'We deliver diesel directly to site to keep equipment and generators running. Dependable, scheduled fuel supply reduces downtime and the hassle of off-site refuelling for your operations.',
@@ -639,7 +628,7 @@ export const services = [
     title: 'Manpower Supply',
     category: 'manpower-operations',
     icon: 'manpower',
-    image: null,
+    image: '/images/services/manpower-supply.jpg',
     excerpt: 'Skilled and unskilled manpower to meet diverse industry needs across the Kingdom.',
     description:
       'We supply skilled and general manpower to meet the demands of construction and industrial projects across Saudi Arabia. From tradespeople to general labour, we help you scale teams up or down with dependable, work-ready personnel.',
@@ -658,7 +647,7 @@ export const services = [
     title: 'Maintenance & Operation Services',
     category: 'manpower-operations',
     icon: 'maintenance',
-    image: null,
+    image: '/images/services/maintenance-operation-services.jpg',
     excerpt: "Keeping assets, facilities and equipment at peak efficiency.",
     description:
       'We provide maintenance and operations support that keeps assets, facilities and equipment running at their best. Planned and responsive maintenance extends asset life, protects uptime and helps control operating costs.',
@@ -677,7 +666,7 @@ export const services = [
     title: 'Maintenance & Support',
     category: 'manpower-operations',
     icon: 'support',
-    image: null,
+    image: '/images/services/maintenance-support.jpg',
     excerpt: 'Dependable technical support that keeps operations running between major works.',
     description:
       'We provide ongoing maintenance and technical support to keep facilities and systems dependable day to day. Responsive teams handle issues quickly so your operations stay productive between larger projects.',
