@@ -5,6 +5,7 @@ export { default as ServicesPreview } from './ServicesPreview';
 export { default as WhyUsSection } from './WhyUsSection';
 export { default as SectorsSection } from './SectorsSection';
 export { default as ClientsSection } from './ClientsSection';
+export { default as FAQSection } from './FAQSection';
 export { default as CredentialStrip } from './CredentialStrip';
 export { default as CTASection } from './CTASection';
 export { default as PageHeader } from './PageHeader';

@@ -88,6 +88,22 @@ export function getServiceSchema(service) {
   };
 }
 
+// items: [{ question, answer }].
+export function getFaqSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+}
+
 // items: [{ label, to? }]. `currentUrl` completes the last (current) crumb.
 export function getBreadcrumbSchema(items, currentUrl) {
   return {
