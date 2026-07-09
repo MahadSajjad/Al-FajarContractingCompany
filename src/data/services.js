@@ -583,16 +583,16 @@ export const services = [
     image: null,
     excerpt: 'A broad range of well-maintained equipment to complete projects safely and on budget.',
     description:
-      'We provide well-maintained construction equipment for hire to support projects of any size. Reliable plant and timely availability help you keep work moving safely and within budget — with or without operators as required.',
+      'We provide well-maintained construction equipment for hire to support projects of any size. Reliable plant and timely availability help you keep work moving safely and within budget — with or without operators, on short-term or longer contract hire terms as required.',
     bullets: [
       'Broad range of construction plant',
       'Regularly maintained and inspected',
       'Operated or bare hire options',
-      'Flexible hire periods',
+      'Short-term and contract hire terms',
     ],
     metaTitle: 'Rental Equipment & Plant Hire in Saudi Arabia',
     metaDescription:
-      'Equipment rental by Al Fajr Contracting — a broad range of well-maintained plant to complete projects safely and on budget across Saudi Arabia.',
+      'Equipment rental and contract hire by Al Fajr Contracting — a broad range of well-maintained plant to complete projects safely and on budget across Saudi Arabia.',
   },
   {
     slug: 'dump-truck-rental',
@@ -602,16 +602,16 @@ export const services = [
     image: null,
     excerpt: 'Dump trucks for earthmoving and haulage, available with experienced operators.',
     description:
-      'We hire out dump trucks for earthmoving, material haulage and site logistics. Maintained vehicles and experienced operators keep material flowing efficiently across the project.',
+      'We hire out dump trucks for earthmoving, material haulage and site transport logistics. Maintained vehicles and experienced operators keep material flowing efficiently across the project.',
     bullets: [
-      'Earthmoving and material haulage',
+      'Earthmoving, material haulage and transport logistics',
       'Maintained, road-ready vehicles',
       'Experienced operators available',
       'Flexible scheduling',
     ],
-    metaTitle: 'Dump Truck Rental in Saudi Arabia',
+    metaTitle: 'Dump Truck Rental & Transport Logistics in Saudi Arabia',
     metaDescription:
-      'Dump truck rental by Al Fajr Contracting — maintained vehicles and experienced operators for earthmoving and haulage across Saudi Arabia.',
+      'Dump truck rental by Al Fajr Contracting — maintained vehicles and experienced operators for earthmoving, haulage and site transport logistics across Saudi Arabia.',
   },
   {
     slug: 'diesel-supply-truck',
