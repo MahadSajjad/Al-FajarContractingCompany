@@ -46,8 +46,10 @@ export const siteConfig = {
     x: '',
   },
 
-  // Open Graph / share image (place a real 1200x630 image at this path).
-  ogImage: '/og-image.jpg',
+  // Open Graph / share image — branded placeholder (src/config/theme.js palette,
+  // same "spec-sheet" language as the hero). Swap for real project photography
+  // via the same path whenever the client supplies it.
+  ogImage: '/og-image.png',
 };
 
 /* ------------------------ derived helpers ------------------------ */
