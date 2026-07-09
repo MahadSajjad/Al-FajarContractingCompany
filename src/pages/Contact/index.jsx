@@ -17,7 +17,7 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact"
+        title="Contact Us in Saudi Arabia"
         description="Contact Al Fajr Contracting Company for civil, industrial, MEP, manpower and equipment services. Call, WhatsApp or request a quote — head office in Riyadh, serving projects across Saudi Arabia."
         path="/contact"
       />

@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { FiCheck, FiPhone, FiArrowLeft } from 'react-icons/fi';
+import { FiCheck, FiPhone, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import SEO from '../../components/seo/SEO';
 import StructuredData from '../../components/seo/StructuredData';
@@ -12,6 +12,7 @@ import ServiceCard from '../../components/sections/ServiceCard';
 import CTASection from '../../components/sections/CTASection';
 import { getIcon } from '../../components/ui/iconMap';
 import { getServiceBySlug, getCategory, getServicesByCategory } from '../../data/services';
+import { getSectorsByService } from '../../data/sectors';
 import { siteConfig, primaryPhone, telLink, whatsappLink } from '../../config/siteConfig';
 
 function ServiceNotFound() {
@@ -49,6 +50,7 @@ export default function ServiceDetail() {
   const related = getServicesByCategory(service.category)
     .filter((s) => s.slug !== service.slug)
     .slice(0, 3);
+  const usedInSectors = getSectorsByService(service.slug);
 
   return (
     <>
@@ -100,6 +102,26 @@ export default function ServiceDetail() {
                 </li>
               ))}
             </ul>
+
+            {usedInSectors.length > 0 && (
+              <div className="mt-10">
+                <p className="font-mono text-xs uppercase tracking-eyebrow text-slate-400">
+                  Used across sectors
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {usedInSectors.map((sector) => (
+                    <Link
+                      key={sector.slug}
+                      to={`/sectors#${sector.slug}`}
+                      className="inline-flex items-center gap-1.5 rounded-sm border border-concrete-300 bg-concrete px-3 py-1.5 font-mono text-xs uppercase tracking-wide text-steel-navy transition-colors hover:border-blueprint-blue hover:text-blueprint-blue"
+                    >
+                      {sector.title}
+                      <FiArrowRight className="h-3 w-3" aria-hidden="true" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <div className="mt-10">
               <Link

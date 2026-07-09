@@ -8,7 +8,7 @@ export default function Clients() {
   return (
     <>
       <SEO
-        title="Clients & Partners"
+        title="Clients & Partners in Saudi Arabia"
         description="Al Fajr Contracting partners with clients across the public sector, energy, industrial and real-estate markets in Saudi Arabia."
         path="/clients"
       />

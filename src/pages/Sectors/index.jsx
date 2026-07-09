@@ -15,7 +15,7 @@ export default function Sectors() {
   return (
     <>
       <SEO
-        title="Sectors"
+        title="Sectors We Serve in Saudi Arabia"
         description="Al Fajr Contracting serves residential, commercial, industrial and oil & gas sectors across Saudi Arabia — with the right teams, plant and standards for each."
         path="/sectors"
       />

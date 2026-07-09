@@ -105,7 +105,7 @@ export const services = [
       'Internal and external plastering',
       'Surface preparation for finishing works',
     ],
-    metaTitle: 'Concrete & Plaster Work',
+    metaTitle: 'Concrete & Plaster Work in Saudi Arabia',
     metaDescription:
       'Concrete and plastering services by Al Fajr Contracting — durable pours and clean finishes built to specification across Saudi Arabia.',
   },
@@ -124,7 +124,7 @@ export const services = [
       'Reinforced and load-bearing blockwork',
       'Clean, plumb surfaces ready for finishing',
     ],
-    metaTitle: 'Block Work Services',
+    metaTitle: 'Block Work Services in Saudi Arabia',
     metaDescription:
       'Blockwork by Al Fajr Contracting — partitions, boundary walls and load-bearing walls built accurately and ready for finishing.',
   },
@@ -143,7 +143,7 @@ export const services = [
       'Structural alterations and openings',
       'Phased works around live operations',
     ],
-    metaTitle: 'Renovations & Extensions',
+    metaTitle: 'Renovations & Extensions in Saudi Arabia',
     metaDescription:
       'Renovation and extension contractor — Al Fajr Contracting upgrades and expands residential, commercial and industrial spaces across Saudi Arabia.',
   },
@@ -162,7 +162,7 @@ export const services = [
       'Drawing-to-site coordination',
       'Quality checks against specification',
     ],
-    metaTitle: 'Architectural & Structural Work',
+    metaTitle: 'Architectural & Structural Work in Saudi Arabia',
     metaDescription:
       'Architectural and structural contracting by Al Fajr Contracting — detailing and structural elements built to drawing and specification.',
   },
@@ -183,7 +183,7 @@ export const services = [
       'Testing and commissioning',
       'Coordination with civil and electrical trades',
     ],
-    metaTitle: 'Mechanical Services & HVAC',
+    metaTitle: 'Mechanical Services & HVAC in Saudi Arabia',
     metaDescription:
       'Mechanical and HVAC contracting by Al Fajr Contracting — installation, testing and commissioning for industrial and commercial projects in Saudi Arabia.',
   },
@@ -202,7 +202,7 @@ export const services = [
       'Containment, cabling and terminations',
       'Testing, inspection and handover',
     ],
-    metaTitle: 'Electrical Solutions & Installation',
+    metaTitle: 'Electrical Solutions & Installation in Saudi Arabia',
     metaDescription:
       'Electrical contracting by Al Fajr Contracting — distribution, lighting and power installed and tested by qualified electricians across Saudi Arabia.',
   },
@@ -221,7 +221,7 @@ export const services = [
       'Sanitary fixtures and fittings',
       'Pressure testing and commissioning',
     ],
-    metaTitle: 'Plumbing Work & Sanitary Installation',
+    metaTitle: 'Plumbing Work & Sanitary Installation in Saudi Arabia',
     metaDescription:
       'Plumbing services by Al Fajr Contracting — water supply, drainage and sanitary systems installed, tested and commissioned across Saudi Arabia.',
   },
@@ -240,7 +240,7 @@ export const services = [
       'Pressure testing and flushing',
       'Coordination with civil and mechanical scopes',
     ],
-    metaTitle: 'Pipe Line Work',
+    metaTitle: 'Pipe Line Work in Saudi Arabia',
     metaDescription:
       'Pipeline installation by Al Fajr Contracting — fabrication, jointing and testing for process and utility systems across Saudi Arabia.',
   },
@@ -259,7 +259,7 @@ export const services = [
       'Supports, dampers and terminals',
       'Airflow balancing support',
     ],
-    metaTitle: 'HVAC Ducting',
+    metaTitle: 'HVAC Ducting in Saudi Arabia',
     metaDescription:
       'Ducting services by Al Fajr Contracting — HVAC ductwork fabricated, insulated and installed for efficient air distribution in Saudi Arabia.',
   },
@@ -278,7 +278,7 @@ export const services = [
       'Bonding and earthing',
       'Capacity for future cabling',
     ],
-    metaTitle: 'Cable Tray & Containment',
+    metaTitle: 'Cable Tray & Containment in Saudi Arabia',
     metaDescription:
       'Cable tray and containment systems by Al Fajr Contracting — safe, organised routing for electrical and data infrastructure across Saudi Arabia.',
   },
@@ -299,7 +299,7 @@ export const services = [
       'Integration with detection and alarm',
       'Testing and commissioning',
     ],
-    metaTitle: 'Fire Fighting System Installation',
+    metaTitle: 'Fire Fighting System Installation in Saudi Arabia',
     metaDescription:
       'Fire-fighting system installation by Al Fajr Contracting — sprinklers, pumps and pipework tested to protect people and property in Saudi Arabia.',
   },
@@ -318,7 +318,7 @@ export const services = [
       'Smart-building automation',
       'Configuration, testing and handover',
     ],
-    metaTitle: 'Security & Smart Systems',
+    metaTitle: 'Security & Smart Systems in Saudi Arabia',
     metaDescription:
       'Security and smart-system installation by Al Fajr Contracting — CCTV, access control and automation protecting people and assets across Saudi Arabia.',
   },
@@ -337,7 +337,7 @@ export const services = [
       'Controls and monitoring',
       'Maintenance and support',
     ],
-    metaTitle: 'Industrial Refrigeration',
+    metaTitle: 'Industrial Refrigeration in Saudi Arabia',
     metaDescription:
       'Industrial refrigeration by Al Fajr Contracting — engineered cooling, cold-store and process refrigeration for demanding operations in Saudi Arabia.',
   },
@@ -356,7 +356,7 @@ export const services = [
       'Industrial and commercial supply',
       'Testing and commissioning',
     ],
-    metaTitle: 'Power Solutions',
+    metaTitle: 'Power Solutions in Saudi Arabia',
     metaDescription:
       'Power solutions by Al Fajr Contracting — distribution and backup power for industry, commercial facilities and critical infrastructure in Saudi Arabia.',
   },
@@ -377,7 +377,7 @@ export const services = [
       'Spoil handling and clearance',
       'Safe, methodical site sequencing',
     ],
-    metaTitle: 'Excavation & Demolition',
+    metaTitle: 'Excavation & Demolition in Saudi Arabia',
     metaDescription:
       'Excavation and demolition by Al Fajr Contracting — experienced teams and specialised equipment delivering safely, on time and on budget in Saudi Arabia.',
   },
@@ -396,7 +396,7 @@ export const services = [
       'Layered placement and compaction',
       'Compliance with project specifications',
     ],
-    metaTitle: 'Grading & Backfilling',
+    metaTitle: 'Grading & Backfilling in Saudi Arabia',
     metaDescription:
       'Grading and backfilling by Al Fajr Contracting — quality materials and proven compaction meeting engineering specifications across Saudi Arabia.',
   },
@@ -415,7 +415,7 @@ export const services = [
       'Sub-base preparation',
       'Final surface readiness',
     ],
-    metaTitle: 'Leveling & Compaction',
+    metaTitle: 'Leveling & Compaction in Saudi Arabia',
     metaDescription:
       'Leveling and compaction by Al Fajr Contracting — solid, well-compacted bases from site preparation through final surface readiness in Saudi Arabia.',
   },
@@ -434,7 +434,7 @@ export const services = [
       'Scheduled, reliable delivery',
       'Support for infrastructure projects',
     ],
-    metaTitle: 'Material & Asphalt Supply',
+    metaTitle: 'Material & Asphalt Supply in Saudi Arabia',
     metaDescription:
       'Material and asphalt supply by Al Fajr Contracting — reliable, timely delivery for infrastructure, roadwork and building projects in Saudi Arabia.',
   },
@@ -453,7 +453,7 @@ export const services = [
       'Planned routing and scheduling',
       'Safe, cost-effective logistics',
     ],
-    metaTitle: 'Loading & Transportation',
+    metaTitle: 'Loading & Transportation in Saudi Arabia',
     metaDescription:
       'Loading and transportation by Al Fajr Contracting — efficient, safe and cost-effective haulage tailored to your project across Saudi Arabia.',
   },
@@ -472,7 +472,7 @@ export const services = [
       'Responsible handling and disposal',
       'Cleaner, safer, more productive sites',
     ],
-    metaTitle: 'Waste Removal',
+    metaTitle: 'Waste Removal in Saudi Arabia',
     metaDescription:
       'Waste removal by Al Fajr Contracting — fast, safe and environmentally responsible clearance for construction and industrial sites in Saudi Arabia.',
   },
@@ -491,7 +491,7 @@ export const services = [
       'Access and platform preparation',
       'Coordination with civil works',
     ],
-    metaTitle: 'Site Preparation & Earthworks',
+    metaTitle: 'Site Preparation & Earthworks in Saudi Arabia',
     metaDescription:
       'Site preparation and earthworks by Al Fajr Contracting — clearing, earthmoving and groundworks that set projects up right across Saudi Arabia.',
   },
@@ -512,7 +512,7 @@ export const services = [
       'Jointing and finishing',
       'Acoustic and moisture-resistant options',
     ],
-    metaTitle: 'Gypsum Board Partitions & Ceilings',
+    metaTitle: 'Gypsum Board Partitions & Ceilings in Saudi Arabia',
     metaDescription:
       'Gypsum board works by Al Fajr Contracting — partitions and ceilings installed cleanly and ready for decoration across Saudi Arabia.',
   },
@@ -531,7 +531,7 @@ export const services = [
       'Protective and decorative coatings',
       'Even, durable finishes',
     ],
-    metaTitle: 'Painting Work',
+    metaTitle: 'Painting Work in Saudi Arabia',
     metaDescription:
       'Painting services by Al Fajr Contracting — properly prepared interior and exterior finishes that are even and durable across Saudi Arabia.',
   },
@@ -550,7 +550,7 @@ export const services = [
       'Accurate setting out and levels',
       'Clean grouting and finishing',
     ],
-    metaTitle: 'Marble & Tiles Work',
+    metaTitle: 'Marble & Tiles Work in Saudi Arabia',
     metaDescription:
       'Marble and tiling by Al Fajr Contracting — precise floor and wall installation with crisp lines and level surfaces across Saudi Arabia.',
   },
@@ -569,7 +569,7 @@ export const services = [
       'Fabrication and secure fixing',
       'Safety-compliant, clean finishing',
     ],
-    metaTitle: 'Hand Railing & Balustrades',
+    metaTitle: 'Hand Railing & Balustrades in Saudi Arabia',
     metaDescription:
       'Handrail and balustrade works by Al Fajr Contracting — safe, securely fixed and neatly finished metalwork across Saudi Arabia.',
   },
@@ -590,7 +590,7 @@ export const services = [
       'Operated or bare hire options',
       'Flexible hire periods',
     ],
-    metaTitle: 'Rental Equipment & Plant Hire',
+    metaTitle: 'Rental Equipment & Plant Hire in Saudi Arabia',
     metaDescription:
       'Equipment rental by Al Fajr Contracting — a broad range of well-maintained plant to complete projects safely and on budget across Saudi Arabia.',
   },
@@ -609,7 +609,7 @@ export const services = [
       'Experienced operators available',
       'Flexible scheduling',
     ],
-    metaTitle: 'Dump Truck Rental',
+    metaTitle: 'Dump Truck Rental in Saudi Arabia',
     metaDescription:
       'Dump truck rental by Al Fajr Contracting — maintained vehicles and experienced operators for earthmoving and haulage across Saudi Arabia.',
   },
@@ -628,7 +628,7 @@ export const services = [
       'Scheduled, dependable supply',
       'Less downtime and refuelling effort',
     ],
-    metaTitle: 'Diesel Supply Truck',
+    metaTitle: 'Diesel Supply Truck in Saudi Arabia',
     metaDescription:
       'On-site diesel supply by Al Fajr Contracting — scheduled fuel delivery that keeps plant and generators productive across Saudi Arabia.',
   },
@@ -668,7 +668,7 @@ export const services = [
       'Facility and equipment upkeep',
       'Improved uptime and asset life',
     ],
-    metaTitle: 'Maintenance & Operation Services',
+    metaTitle: 'Maintenance & Operation Services in Saudi Arabia',
     metaDescription:
       'Maintenance and operations by Al Fajr Contracting — keeping assets, facilities and equipment at peak efficiency across Saudi Arabia.',
   },
@@ -687,7 +687,7 @@ export const services = [
       'System and facility upkeep',
       'Dependable day-to-day operations',
     ],
-    metaTitle: 'Maintenance & Support',
+    metaTitle: 'Maintenance & Support in Saudi Arabia',
     metaDescription:
       'Maintenance and support by Al Fajr Contracting — responsive technical support keeping facilities and systems dependable across Saudi Arabia.',
   },

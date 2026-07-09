@@ -26,7 +26,7 @@ export default function About() {
   return (
     <>
       <SEO
-        title="About Us"
+        title="About Us — Saudi Arabia General Contractor"
         description="Al Fajr Contracting Company is a trusted Saudi general contractor delivering civil, MEP, industrial and manpower solutions with a commitment to safety, quality and on-time delivery."
         path="/about"
       />

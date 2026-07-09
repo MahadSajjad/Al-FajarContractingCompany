@@ -52,7 +52,7 @@ export const sectors = [
       'Industrial refrigeration and power',
       'Maintenance and operations',
     ],
-    relatedServices: ['mechanical-services', 'industrial-refrigeration', 'power-solutions', 'maintenance-operation-services'],
+    relatedServices: ['mechanical-services', 'industrial-refrigeration', 'power-solutions', 'rental-equipment', 'maintenance-operation-services'],
   },
   {
     slug: 'oil-gas',
@@ -70,10 +70,14 @@ export const sectors = [
       'Site preparation and earthworks',
       'Concrete for heavy infrastructure',
     ],
-    relatedServices: ['excavation-demolition', 'grading-backfilling', 'site-preparation-earthworks', 'civil-work'],
+    relatedServices: ['excavation-demolition', 'grading-backfilling', 'dump-truck-rental', 'site-preparation-earthworks', 'civil-work'],
   },
 ];
 
 export const getSectorBySlug = (slug) => sectors.find((s) => s.slug === slug);
+
+// Reverse lookup for the ServiceDetail page's "Used across sectors" cross-links.
+export const getSectorsByService = (serviceSlug) =>
+  sectors.filter((s) => s.relatedServices?.includes(serviceSlug));
 
 export default sectors;

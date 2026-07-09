@@ -10,7 +10,7 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Services"
+        title="Contracting & Industrial Services in Saudi Arabia"
         description={`Explore ${services.length} contracting and industrial services from Al Fajr — civil, MEP, specialized systems, earthworks, finishing, equipment and manpower across Saudi Arabia.`}
         path="/services"
       />
