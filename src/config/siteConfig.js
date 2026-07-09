@@ -32,6 +32,8 @@ export const siteConfig = {
       address: 'HPHR+CW9, An Nasr Rd, Industrial District, Riyadh 14714, Saudi Arabia',
       primary: true,
       mapQuery: 'HPHR+CW9 An Nasr Rd, Industrial District, Riyadh 14714, Saudi Arabia',
+      // From the Google Maps pin (confirmed by client).
+      geo: { lat: 24.5785372, lng: 46.7423407 },
     },
   ],
 

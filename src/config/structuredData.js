@@ -36,6 +36,11 @@ export function getOrganizationSchema() {
       addressLocality: primaryLocation.city,
       addressCountry: 'SA',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: primaryLocation.geo.lat,
+      longitude: primaryLocation.geo.lng,
+    },
     areaServed,
     knowsLanguage: ['en', 'ar'],
     ...(sameAs.length ? { sameAs } : {}),
