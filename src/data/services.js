@@ -651,7 +651,7 @@ export const services = [
     ],
     metaTitle: 'Manpower Supply in Saudi Arabia',
     metaDescription:
-      'Manpower supply by Al Fajr Contracting — skilled and general personnel to meet diverse industry needs across Jeddah, Riyadh and Madinah.',
+      'Manpower supply by Al Fajr Contracting — skilled and general personnel to meet diverse industry needs across the Kingdom of Saudi Arabia.',
   },
   {
     slug: 'maintenance-operation-services',

@@ -13,10 +13,21 @@
     <!-- Fonts: Saira (display) · IBM Plex Sans (body) · IBM Plex Mono (data) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Non-blocking load: fetch in parallel with rendering, swap in once ready.
+         `media="print"` tricks the browser into a low-priority fetch; the onload
+         flips it to `all` and applies the stylesheet. noscript covers JS-off. -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira:wght@500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira:wght@500;600;700;800&display=swap"
+      />
+    </noscript>
 
     <!-- title + description are injected per-page via the SEO component
          (vite-react-ssg Head). Intentionally omitted here to avoid duplicates. -->

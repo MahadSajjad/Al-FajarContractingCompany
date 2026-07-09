@@ -11,7 +11,8 @@
     { "source": "/our-services", "destination": "/services", "permanent": true },
     { "source": "/service", "destination": "/services", "permanent": true },
     { "source": "/contact-us", "destination": "/contact", "permanent": true },
-    { "source": "/our-clients", "destination": "/clients", "permanent": true }
+    { "source": "/our-clients", "destination": "/clients", "permanent": true },
+    { "source": "/power-solutions", "destination": "/services/power-solutions", "permanent": true }
   ],
   "headers": [
     {
