@@ -6,7 +6,11 @@
     <script>
       document.documentElement.classList.add('js');
     </script>
+    <!-- SVG primary (scales cleanly); PNG fallback for crawlers/browsers that
+         don't render SVG favicons — both matter for showing up next to the
+         site name in Google Search results (needs a square icon >48x48px). -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0E1C2B" />
 
