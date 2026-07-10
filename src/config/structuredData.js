@@ -21,7 +21,11 @@ export function getOrganizationSchema() {
     '@id': ORG_ID,
     name: siteConfig.name,
     legalName: siteConfig.legalName,
-    alternateName: siteConfig.nameAr,
+    // Includes the Arabic name plus the "Al Fajar" spelling variant still live
+    // on the Google Business Profile listing (README §Open items #1) — bridges
+    // the mismatch for entity resolution until the GBP listing itself is
+    // corrected to the canonical "Al Fajr" spelling.
+    alternateName: [siteConfig.nameAr, 'Al Fajar Contracting Company'],
     url: siteConfig.url,
     logo: `${siteConfig.url}/favicon.svg`,
     image: `${siteConfig.url}${siteConfig.ogImage}`,

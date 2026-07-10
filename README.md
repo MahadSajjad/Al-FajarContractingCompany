@@ -232,11 +232,16 @@ casino/gambling SEO spam** (a compromised install). At cutover:
 
 ## Open items requiring client confirmation
 
-1. **Name spelling** — using canonical **"Al Fajr Contracting Company"** (not "Al Fajar").
-2. **Office address(es)** — sources conflict (profile: Jeddah/Basma Tower; live site: Riyadh;
-   docs: Riyadh Al Sulay + Madinah). Confirm the canonical published office(s) and the map pin.
-   Marked `CONFIRM` in `siteConfig.js`. Site copy has been unified to Riyadh-only (the single
-   published office); the exact `geo` lat/long for JSON-LD is still pending.
+1. **Name spelling** — ~~confirmed~~ **"Al Fajr Contracting Company"** is canonical (2026-07-10).
+   The Google Business Profile listing is still spelled "Al Fajar" — this is a real NAP mismatch
+   that only Google Business Profile access can fix (not something this repo controls): sign in to
+   [Google Business Profile Manager](https://business.google.com), edit the business name to
+   "Al Fajr Contracting Company", and expect a review cycle since name changes can trigger
+   re-verification. In the meantime, `structuredData.js` lists "Al Fajar Contracting Company" as
+   an `alternateName` on the Organization schema so search engines can resolve both to one entity.
+2. **Office address(es)** — ~~sources conflict~~ resolved to the single Riyadh HQ (2026-07-10);
+   `geo` lat/long added to `siteConfig.js` and the Organization JSON-LD from the confirmed Google
+   Maps pin.
 3. **"Years of experience"** — CR dated 2024; any "25 years" claim must be reframed honestly
    (e.g. "combined team experience"). No numeric experience claim is published yet.
 4. **Client logos / partners** — written permission required before publishing any third-party
@@ -244,7 +249,10 @@ casino/gambling SEO spam** (a compromised install). At cutover:
    (`src/data/clients.js`).
 5. **Credential numbers** — only credential **types + issuers** are shown; confirm which (if any)
    CR/VAT/licence numbers are safe to publish. Never publish personal ID / national-address proof.
-6. **Arabic / RTL** — recommended for the Saudi market; the build is i18n-ready either way.
+6. **Arabic / RTL** — decided out of scope for now (2026-07-10); revisit if the client wants it
+   later — the build stays i18n-ready either way. Multi-city landing pages (Jeddah, Dammam, etc.)
+   were also decided out of scope on the same date — the single Riyadh HQ with
+   `areasServed: Saudi Arabia` covers this without speculative city pages.
 7. **WhatsApp line & socials** — confirm which phone is WhatsApp; provide social profile URLs
    (`siteConfig.social`).
 8. **Real images** — provide cleaned, optimised project photos (see "Swapping in real images").
