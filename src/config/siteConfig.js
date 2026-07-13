@@ -17,7 +17,7 @@ export const siteConfig = {
 
   whatsapp: '+966570209993',
 
-  emails: ['malik.hayat@alfajrcontractingco.com',],
+  emails: ['malak.hayat@alfajrcontractingco.com',],
 
   locations: [
     {
