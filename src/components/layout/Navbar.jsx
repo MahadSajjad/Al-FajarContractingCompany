@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiMenu, FiPhone } from 'react-icons/fi';
+import { FiMenu } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import Logo from './Logo';
 import MobileMenu from './MobileMenu';
 import { mainNav, isNavActive } from '../../config/navigation';
-import { primaryPhone, telLink } from '../../config/siteConfig';
+import { primaryPhone, whatsappLink } from '../../config/siteConfig';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 import { useHydrated } from '../../hooks/useHydrated';
 
@@ -52,10 +53,12 @@ export default function Navbar() {
         {/* Desktop actions */}
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href={telLink(primaryPhone.number)}
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-mono text-sm font-medium text-steel-navy transition-colors hover:text-blueprint-blue"
           >
-            <FiPhone className="h-4 w-4 text-safety-orange" aria-hidden="true" />
+            <FaWhatsapp className="h-4 w-4 text-safety-orange" aria-hidden="true" />
             {primaryPhone.display}
           </a>
           <Link
